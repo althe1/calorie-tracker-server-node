@@ -20,7 +20,7 @@ const routes = require("./routes");
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:3000" || process.env.ORIGIN,
+    origin: process.env.ORIGIN || "http://localhost:3000",
   })
 );
 app.use(helmet());
