@@ -37,6 +37,7 @@ app.use(
       secure: process.env.NODE_ENV === "production",
       httpOnly: true,
       maxAge: ONE_DAY,
+      sameSite: "none",
     },
   })
 );
